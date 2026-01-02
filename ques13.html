@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions and Scope</title>
+</head>
+<body>
+
+    <h1>JavaScript Functions and Scope</h1>
+
+    <button onclick="showValues()">Show Values</button>
+
+    <p id="output"></p>
+
+    <script>
+        var x = 10;
+        let y = 20;
+        const z = 30;
+
+        function showValues() {
+            let sum = x + y + z;
+            output.innerHTML =
+                "Value of var x: " + x + "<br>" +
+                "Value of let y: " + y + "<br>" +
+                "Value of const z: " + z + "<br>" +
+                "Sum: " + sum;
+        }
+    </script>
+
+</body>
+</html>

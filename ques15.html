@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+
+    <h1 id="title">DOM Example</h1>
+    <p class="text">This text will change.</p>
+
+    <button onclick="changeText()">Change Content</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("title").innerHTML = "DOM Updated Successfully";
+
+            document.querySelector(".text").innerHTML =
+                "Text changed using querySelector and innerHTML.";
+        }
+    </script>
+
+</body>
+</html>

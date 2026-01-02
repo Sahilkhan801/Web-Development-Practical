@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+
+    <h1>Basic Arithmetic Operations</h1>
+
+    <label>Enter First Number:</label><br>
+    <input type="number" id="num1"><br><br>
+
+    <label>Enter Second Number:</label><br>
+    <input type="number" id="num2"><br><br>
+
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        function add() {
+            let a = Number(num1.value);
+            let b = Number(num2.value);
+            result.innerHTML = "Addition: " + (a + b);
+        }
+
+        function subtract() {
+            let a = Number(num1.value);
+            let b = Number(num2.value);
+            result.innerHTML = "Subtraction: " + (a - b);
+        }
+
+        function multiply() {
+            let a = Number(num1.value);
+            let b = Number(num2.value);
+            result.innerHTML = "Multiplication: " + (a * b);
+        }
+
+        function divide() {
+            let a = Number(num1.value);
+            let b = Number(num2.value);
+            result.innerHTML = "Division: " + (a / b);
+        }
+    </script>
+
+</body>
+</html>

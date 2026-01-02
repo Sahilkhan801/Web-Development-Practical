@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create and Remove Elements</title>
+</head>
+<body>
+
+    <h1>Dynamic Element Creation</h1>
+
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Item</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        function addItem() {
+            const li = document.createElement("li");
+            li.innerHTML = "New List Item";
+            document.getElementById("list").appendChild(li);
+        }
+
+        function removeItem() {
+            const list = document.getElementById("list");
+            if (list.lastChild) {
+                list.removeChild(list.lastChild);
+            }
+        }
+    </script>
+
+</body>
+</html>
