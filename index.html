@@ -2,26 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSS Box Model</title>
+    <title>CSS Selectors</title>
 
     <style>
-        .container {
-            width: 300px;
-            background-color: lightblue;
-            border: 5px solid navy;
-            padding: 20px;
-            margin: 40px auto;
+        * {
+            font-family: Arial;
+        }
+
+        #heading {
+            color: red;
             text-align: center;
+        }
+
+        .text {
+            color: blue;
+        }
+
+        div p {
+            color: green;
+        }
+
+        h2, h3 {
+            background-color: lightyellow;
         }
     </style>
 </head>
 <body>
 
-    <h1 align="center">CSS Box Model</h1>
+    <h1 id="heading">CSS Selectors Demonstration</h1>
 
-    <div class="container">
-        This box demonstrates margin, border, padding and background.
+    <p class="text">This paragraph uses class selector.</p>
+
+    <div>
+        <p>This paragraph uses descendant selector.</p>
     </div>
+
+    <h2>Grouped Heading</h2>
+    <h3>Another Grouped Heading</h3>
 
 </body>
 </html>
