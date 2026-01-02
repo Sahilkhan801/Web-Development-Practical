@@ -2,43 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSS Selectors</title>
+    <title>Responsive Web Page</title>
 
     <style>
-        * {
-            font-family: Arial;
-        }
-
-        #heading {
-            color: red;
+        body {
+            font-size: 2vw;
+            background-color: lightgreen;
             text-align: center;
         }
 
-        .text {
-            color: blue;
+        .box {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid black;
         }
 
-        div p {
-            color: green;
-        }
-
-        h2, h3 {
-            background-color: lightyellow;
+        @media (max-width: 600px) {
+            body {
+                background-color: lightgray;
+                font-size: 4vw;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1 id="heading">CSS Selectors Demonstration</h1>
+    <h1>Responsive Design</h1>
 
-    <p class="text">This paragraph uses class selector.</p>
-
-    <div>
-        <p>This paragraph uses descendant selector.</p>
+    <div class="box">
+        Resize the browser window to see responsiveness.
     </div>
-
-    <h2>Grouped Heading</h2>
-    <h3>Another Grouped Heading</h3>
 
 </body>
 </html>
